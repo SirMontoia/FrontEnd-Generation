@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+
+    <h3 class="center">Entre em contato comigo!</h3>
+<div class="container">
+    <div class="p-30">
+        <h2>Me envie uma mensagem!</h2>
+        <form >
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" onkeyup='validaNome()'>
+            <div id='txtNome'></div>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" onkeyup="validaEmail()">
+            <div id= 'txtEmail'> </div>
+            <br>
+            <br>
+            <label for="assunto">Assunto:</label> <br>
+            <textarea name="assunto" id="assunto"  cols="70" rows="10" onkeyup="validaAssunto()"></textarea>
+            <div id='txtAssunto'></div>
+            <br>
+            <br>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+
+        </div>
+               
+            
+        <div >
+            <h2>Endereço:</h2>
+        <img src="Assets/Skyrim.jpg" alt="skyrim map" height="600px" width="600px" id="imagem" onmousemove="imgZoom()" onmouseout="imgNormal()">
+
+        </div>
+    
+
+    </div>
+    
+    
+    <script src="Assets/js/script.js"></script>
+    
+        
+
+    
+    
+</body>
+</html>
